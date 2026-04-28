@@ -111,3 +111,6 @@ Environment
 
 Windows, Linux
 IIS, basic networking
+
+### 📌 Note
+This portfolio is a simplified representation of my testing approach and experience.
