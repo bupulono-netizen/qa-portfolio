@@ -9,16 +9,24 @@ Currently working as a Google Rater, with strong analytical skills in evaluating
 Experienced in identifying issues, validating system behavior, and supporting end users—bringing a practical understanding of how systems should work from both technical and user perspectives.
 
 ✅ Sample Test Cases
-TC-001 – Valid Login
+### 🐞 Real Bug Example
 
-Steps:
+**Application:** Example Website (Public Site)
 
-Open login page
-Enter valid username and password
-Click Login
+**Title:** Broken link on homepage footer
 
-Expected Result:
-User is redirected to dashboard
+**Steps to Reproduce:**
+1. Open homepage
+2. Scroll to footer
+3. Click "Privacy Policy"
+
+**Expected Result:**
+Page opens correctly
+
+**Actual Result:**
+404 Not Found page appears
+
+**Severity:** Medium
 
 TC-002 – Invalid Password
 
@@ -41,9 +49,18 @@ Click Login
 Expected Result:
 Validation message appears
 
+#### TC-004 – SQL Injection Attempt
+
+Steps:
+1. Enter ' OR '1'='1 in username field
+2. Enter any password
+3. Click Login
+
+Expected Result:
+Login should be rejected and input sanitized
 🐞 Sample Bug Report
 
-Title: Login button does not respond when clicked
+#### TC-005 – Login button does not respond when clicked
 
 Environment:
 
